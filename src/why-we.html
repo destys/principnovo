@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Почему именно мы"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{
+        "class":""
+        })
+        <main class="page">
+            <section class="results _results-page">
+                <div class="results__container">
+                    <img data-src="@img/results-bg.png" alt="Каждый проект для нас - важный" class="results__image">
+                    <h2 class="results__title _section-title _left">почему именно мы</h2>
+                    <div class="results__content">
+                        <div class="results__left left-results">
+                            <p>Хотите жить, сохраняя лучшие традиции вашей семьи – мы
+                                создадим для вас роскошный усадебный сад, которым ваши близкие будут гордиться! Именно
+                                этот сад станет олицетворением ваших традиций, ваших ценностей и личного статуса! Мы
+                                знаем, как реализовать вашу идеальную мечту о собственном саде, где вы можете устраивать
+                                семейные обеды и светские приемы, где ваши дети будут веселиться и расти, где ваша жизнь
+                                будет идеальной! </p>
+                            <p>Этим садом вы сможете любоваться в любое время года –
+                                чистотой и графикой зимних
+                                месяцев, радостью весны, буйностью летних красок и романтикой осенней палитры.
+                                Создать
+                                живописный ландшафт вокруг вашего дома, наполнить его силой и красотой, сделать его
+                                уютным – все это в ваших силах. А первый шаг, первый план мы можем сделать вместе!
+                                Мы
+                                знаем каким должен быть Ваш сад и поможем воплотить любые идеи!
+                            </p>
+                            <button type="submit" class="button" data-popup="#callback">Стать нашим
+                                клиентом</button>
+                        </div>
+                        <div class="results__right right-results" data-da=".left-results, 1120">
+                            <div class="right-results__item">
+                                <div class="right-results__num">10</div>
+                                <p class="right-results__text">Лет на рынке<br /> ландщафтного дизайна</p>
+                            </div>
+                            <div class="right-results__item">
+                                <div class="right-results__num">150</div>
+                                <p class="right-results__text">Реализованных<br /> проекта
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="affiliate__why why-affiliate _results-page">
+                <div class="why-affiliate__image">
+                    <img data-src="@img/affiliate/why-we.jpg" alt="">
+                </div>
+                <div class="why-affiliate__info">
+                    <div class="why-affiliate__text">
+                        <p>Важной и весомой причиной является тот факт, что на данный момент партнерская программа
+                            доступна абсолютно бесплатно.</p>
+                        <p>Не нужно совершать первую покупку или копить баллы.</p>
+                        <p>Начните выгодное сотрудничество и повысьте заработок уже сейчас, и в значительной мере
+                            повысить свой заработок, обратитесь по телефону: <a href="tel:+79219529190">+7(921)
+                                952-91-90</a></p>
+                        <p>Звоните и оформляйте специальную карточку ландшафтного дизайнера с 25% скидкой на все
+                            растения нашего садового центра</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

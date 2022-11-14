@@ -1,0 +1,93 @@
+//====================================================================================================
+.footer {
+    padding: rem(20) 0;
+    border-top: 1px solid #e0e6ec;
+    // .footer__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: rem(30);
+        width: 100%;
+        font-weight: 350;
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+        }
+    }
+    // .footer__left
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        @media (min-width: $mobileSmall) {
+            display: block;
+            flex: 0 0 rem(240);
+        }
+    }
+    // .footer__right
+    &__right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(20);
+        width: 100%;
+        max-width: rem(895);
+        font-size: rem(20);
+
+        @include adaptiveValue("font-size", 20, 14, 991, 474, 1);
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+.left-footer {
+    // .left-footer__logo
+    &__logo {
+        display: block;
+        margin-bottom: rem(25);
+    }
+    // .left-footer__years
+    &__years {
+        font-size: rem(14);
+    }
+}
+.right-footer {
+    // .right-footer__contacts
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: rem(10);
+    }
+    // .right-footer__contact
+    &__contact {
+        &:last-child {
+            text-decoration: underline;
+        }
+    }
+    // .right-footer__address
+    &__address {
+        max-width: rem(355);
+        text-align: center;
+
+        @media (min-width: $tablet) {
+            text-align: left;
+        }
+    }
+    // .right-footer__social
+    &__social {
+        display: flex;
+        gap: rem(15);
+    }
+}
+.social-right-footer {
+    // .social-right-footer__item
+    &__item {
+    }
+}
+
+//====================================================================================================

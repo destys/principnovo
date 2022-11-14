@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Верстка «NEW_PROJECT_NAME»</title>
+</head>
+
+<body>
+	<div class="rootpage">
+		<img src="https://some-dev.ru/assets/img/logo.svg" alt="" style="display: block;margin-bottom: 50px;">
+		<h1>Верстка «NEW_PROJECT_NAME»</h1>
+		<div class="rootpage__info">
+			Привет! <br />
+			Это список посадочных страниц вашего сайта. <br />
+			Страницы будут появляться и обновляться по мере готовности проекта!
+		</div>
+		<h2>Готовые страницы:</h2>
+		<ol class="rootpage__list">
+			<li><a target="_blank" href="home.html">Главная</a></li>
+			<li><a target="_blank" href="projects.html">Проекты</a></li>
+			<li><a target="_blank" href="project-detail.html">Cтраница проекта детальная</a></li>
+			<li><a target="_blank" href="designing.html">Проектирование</a></li>
+			<li><a target="_blank" href="contacts.html">Контакты</a></li>
+			<li><a target="_blank" href="fitodesign.html">Фитодизайн</a></li>
+			<li><a target="_blank" href="gardener.html">Эксплуатация и уход</a></li>
+			<li><a target="_blank" href="improvement.html">Озеленение и благоустройство</a></li>
+			<li><a target="_blank" href="construction.html">Ландшафтное строительство</a></li>
+			<li><a target="_blank" href="vacancies.html">Вакансии</a></li>
+			<li><a target="_blank" href="vacancy.html">Вакансия(детальная)</a></li>
+			<li><a target="_blank" href="blog.html">Блог</a></li>
+			<li><a target="_blank" href="post.html">Запись</a></li>
+			<li><a target="_blank" href="affiliate.html">Партнеры</a></li>
+			<li><a target="_blank" href="requisites.html">Реквизиты</a></li>
+			<li><a target="_blank" href="why-we.html">Почему именно мы</a></li>
+			<li><a target="_blank" href="plants.html">Продажа растений</a></li>
+		</ol>
+		<div class="rootpage__contacts">
+			<h2>Мои контакты:</h2>
+			<p>Почта: <a href="mailto:info@some-dev.ru">info@some-dev.ru</a></p>
+			<p>Телефон: <a href="tel:+79264301450">+7 (926) 430-14-50</a></p>
+			<p>Телеграм: <a href="tg://resolve?domain=some_dev/">Перейти</a></p>
+		</div>
+	</div>
+</body>
+<style>
+	@charset "UTF-8";
+	@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,700&display=swap");
+
+	*,
+	*::before,
+	*::after {
+		padding: 0px;
+		margin: 0px;
+		border: 0px;
+		box-sizing: border-box;
+	}
+
+	html,
+	body {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		min-width: 320px;
+		width: 100%;
+		color: #fff;
+		background-color: #2e2e2e;
+	}
+
+	body {
+		font-family: Montserrat;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 1rem;
+	}
+
+	a {
+		text-decoration: underline;
+		color: #fff
+	}
+
+	a:visited {
+		text-decoration: underline;
+		color: #fff;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	ul li {
+		list-style: none;
+	}
+
+	img {
+		vertical-align: top;
+	}
+
+	.wrapper {
+		width: 100%;
+		min-height: 100%;
+		overflow: hidden;
+	}
+
+	.rootpage {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	@media (max-width: 767px) {
+		.rootpage {
+			padding: 30px 15px;
+		}
+	}
+
+	h1 {
+		color: #fff;
+		font-size: 2.5rem;
+		margin: 0px 0px 1.25rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h1 {
+			font-size: 1.85rem;
+			margin: 0px 0px 1.25rem 0px;
+		}
+	}
+
+	h2 {
+		color: #fff;
+		font-size: 1.25rem;
+		margin: 0px 0px 1rem 0px;
+	}
+
+	@media (max-width: 767px) {
+		h2 {
+			font-size: 1.125rem;
+			margin: 0px 0px 1rem 0px;
+		}
+	}
+
+	.rootpage__info {
+		line-height: 140%;
+		margin: 0px 0px 1.5rem 0px;
+	}
+
+	.rootpage__list {
+		margin: 0px 0px 2.25rem 1.25rem;
+	}
+
+	.rootpage__list li:not(:last-child) {
+		margin: 0px 0px 15px 0px;
+	}
+
+	.rootpage__contacts {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		padding: 20px;
+		background: #d12626;
+		border-radius: 8px;
+	}
+</style>
+
+</html>

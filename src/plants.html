@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Продажа растений"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{
+        "class":""
+        })
+        <main class="page">
+            <section class="plants">
+                <h1 class="plants__title _section-title">Продажа растений</h1>
+                <div class="plants__list">
+                    <div class="plants__item item-plants"
+                        style="background: url('@img/plants/plant-1.png') 0 0 no-repeat;">
+                        <div class="item-plants__title">розница</div>
+                        <div class="item-plants__subtitle">Растения для вашего сада и дачи</div>
+                        <a href="#" class="item-plants__button button" target="_blank">Интернет-магазин</a>
+                    </div>
+                    <div class="plants__item item-plants"
+                        style="background: url('@img/plants/plant-2.png') 0 0 no-repeat;">
+                        <div class="item-plants__title">опт</div>
+                        <div class="item-plants__subtitle">Для юридических лиц: ландшафтные
+                            и строительные компании, парки, скверы
+                        </div>
+                        <a href="#" class="item-plants__button button" target="_blank">Сайт питомника растений</a>
+                    </div>
+                </div>
+                <div class="plants__callback callback-plants">
+                    <div class="callback-plants__container">
+                        <div class="callback-plants__title">Специальная партнерская программа для ландшафтных дизайнеров
+                        </div>
+                        <div class="callback-plants__text">
+                            <p>Вы опытный или начинающий дизайнер и хотите получать деньги не только за дизайн, но и
+                                зарабатывать непосредственно на растениях?
+                            </p>
+                            <p>Садовый центр «Принцип NOVO» предлагает выгодную программу
+                                для ландшафтных дизайнеров, которая действительно помогает увеличить доход!
+                            </p>
+                        </div>
+                        <button type="button" class="callback-plants__button button" data-popup="#callback">Узнать
+                            подробнее</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

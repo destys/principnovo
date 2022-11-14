@@ -1,0 +1,91 @@
+.main-projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: rem(50);
+
+    @media (min-width: $tablet) {
+        margin-top: 0;
+    }
+    // .main-projects__title
+    &__title {
+    }
+    // .main-projects__list
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    // .main-projects__item
+    &__item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        @include adaptiveValue("height", 600, 300, 1440, 991, 1);
+
+        color: #fff;
+
+        overflow: hidden;
+
+        &:hover {
+            .item-main-projects__title,
+            .item-main-projects__category {
+                transform: scale(0.99);
+            }
+        }
+    }
+    // .main-projects__nav
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(15);
+        margin-bottom: rem(40);
+    }
+
+    .button {
+        margin: rem(30) auto 0;
+    }
+}
+.item-main-projects {
+    // .item-main-projects__container
+    &__container {
+        width: 100%;
+    }
+    // .item-main-projects__category
+    &__category {
+        margin-bottom: rem(20);
+        @include adaptiveValue("font-size", 24, 18, 1440, 767, 1);
+        color: #fff !important;
+
+        transition: transform 0.2s linear;
+    }
+    // .item-main-projects__title
+    &__title {
+        font-weight: 700;
+        @include adaptiveValue("font-size", 80, 36, 1440, 767, 1);
+        text-transform: uppercase;
+        color: #fff !important;
+
+        transition: transform 0.2s linear;
+    }
+}
+.nav-main-projects {
+    // .nav-main-projects__item
+    &__item {
+    }
+    // .nav-main-projects__link
+    &__link {
+        display: block;
+        padding: rem(10) rem(40);
+        border: 1px solid #0b0b09;
+        border-radius: 4px;
+
+        transition: background-color 0.2s ease-in-out, color 0.2s linear;
+
+        &._current,
+        &:hover {
+            background-color: $mainColor;
+            color: #fff;
+        }
+    }
+}

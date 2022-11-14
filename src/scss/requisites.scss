@@ -1,0 +1,46 @@
+.requisites {
+    margin-top: rem(60);
+    // .requisites__container
+    &__container {
+    }
+    // .requisites__title
+    &__title {
+        text-align: left;
+    }
+    // .requisites__list
+    &__list {
+        font-size: rem(24);
+    }
+    // .requisites__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: rem(20);
+
+        margin-bottom: rem(30);
+
+        @media (min-width: $mobile) {
+            display: grid;
+            grid-template-columns: rem(270) minmax(rem(200), 80%);
+            @include adaptiveValue("gap", 121, 30, 1440, 991, 1);
+
+            margin-bottom: 0;
+            padding: rem(15) 0;
+
+            border-top: 1px solid $grey;
+            border-bottom: 1px solid $grey;
+
+            &:last-of-type {
+                margin-bottom: rem(14);
+                border-bottom: 0;
+            }
+        }
+    }
+    // .requisites__name
+    &__name {
+        color: $grey_dark;
+    }
+    // .requisites__value
+    &__value {
+    }
+}

@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Проектирование"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{
+		"class":""
+		})
+		<main class="page designing">
+			<section class="designing__intro intro-designing">
+				<div class="intro-designing__container">
+					<div class="intro-designing__top top-designing-intro">
+						<h1 class="top-designing-intro__title">Ландшафтное проектирование</h1>
+						<div class="top-designing-intro__subtitle">Преобразуем пространство вокруг вас</div>
+						<div class="top-designing-intro__price">
+							<span>Стоимость разработки проекта</span><span> от 250 000 рублей</span>
+						</div>
+						<button type="button" class="top-designing-intro__button button"
+							data-popup="#callback">Демонстрационный
+							проект</button>
+					</div>
+					<div class="intro-designing__bottom bottom-designing-intro">
+						<div class="bottom-designing-intro__item">
+							<div class="bottom-designing-intro__num">01</div>
+							<div class="bottom-designing-intro__title">Функциональность</div>
+						</div>
+						<div class="bottom-designing-intro__item">
+							<div class="bottom-designing-intro__num">02</div>
+							<div class="bottom-designing-intro__title">Эстетичность</div>
+						</div>
+						<div class="bottom-designing-intro__item">
+							<div class="bottom-designing-intro__num">03</div>
+							<div class="bottom-designing-intro__title">Иновационность</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="main-projects">
+				<h2 class="main-projects__title _section-title">проектируем частные сады <br /> и городские пространства
+				</h2>
+				@@include('html/_projects.htm',{})
+				<button type="submit" class="button button_transparent">Смотреть все</button>
+			</section>
+			<section class="designing__steps steps-designing">
+				<h2 class="steps-designing__title _section-title">этапы проектирования</h2>
+				<div class="steps-designing__list">
+					<div class="steps-designing__item item-designing-steps">
+						<div class="item-designing-steps__image">
+							<img data-src="@img/designing/step-1.jpg" alt="">
+						</div>
+						<div data-spollers class="spollers">
+							<div class="item-designing-steps__icon">
+								<img data-src="@img/designing/icon-1.svg" alt="">
+								<div class="item-designing-steps__num">1</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>Общение с заказчиком</span>
+								</button>
+								<div class="spollers__body">Расскажите, каким вы видите свой будущий сад. Планируете ли
+									создание детской площадки, зоны барбекю, плодового сада. Вместе составим подробное
+									задание на проектирование, учтем все нюансы и пожелания.</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps-designing__item item-designing-steps">
+						<div class="item-designing-steps__image">
+							<img data-src="@img/designing/step-2.jpg" alt="">
+						</div>
+						<div data-spollers class="spollers">
+							<div class="item-designing-steps__icon">
+								<img data-src="@img/designing/icon-2.svg" alt="">
+								<div class="item-designing-steps__num">2</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>ИЗЫСКАТЕЛЬНЫЕ РАБОТЫ</span>
+								</button>
+								<div class="spollers__body">Расскажите, каким вы видите свой будущий сад. Планируете ли
+									создание детской площадки, зоны барбекю, плодового сада. Вместе составим подробное
+									задание на проектирование, учтем все нюансы и пожелания.</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps-designing__item item-designing-steps">
+						<div class="item-designing-steps__image">
+							<img data-src="@img/designing/step-3.jpg" alt="">
+						</div>
+						<div data-spollers class="spollers">
+							<div class="item-designing-steps__icon">
+								<img data-src="@img/designing/icon-3.svg" alt="">
+								<div class="item-designing-steps__num">3</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>ТОПОГРАФИЧЕСКАЯ СЪЕМКА</span>
+								</button>
+								<div class="spollers__body">Расскажите, каким вы видите свой будущий сад. Планируете ли
+									создание детской площадки, зоны барбекю, плодового сада. Вместе составим подробное
+									задание на проектирование, учтем все нюансы и пожелания.</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps-designing__item item-designing-steps">
+						<div class="item-designing-steps__image">
+							<img data-src="@img/designing/step-4.jpg" alt="">
+						</div>
+						<div data-spollers class="spollers">
+							<div class="item-designing-steps__icon">
+								<img data-src="@img/designing/icon-4.svg" alt="">
+								<div class="item-designing-steps__num">4</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>ЭСКИЗНОЕ ПРОЕКТИРОВАНИЕ</span>
+								</button>
+								<div class="spollers__body">Расскажите, каким вы видите свой будущий сад. Планируете ли
+									создание детской площадки, зоны барбекю, плодового сада. Вместе составим подробное
+									задание на проектирование, учтем все нюансы и пожелания.</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps-designing__item item-designing-steps">
+						<div class="item-designing-steps__image">
+							<img data-src="@img/designing/step-5.jpg" alt="">
+						</div>
+						<div data-spollers class="spollers">
+							<div class="item-designing-steps__icon">
+								<img data-src="@img/designing/icon-5.svg" alt="">
+								<div class="item-designing-steps__num">5</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">
+									<span>ПРОЕКТНЫЕ РАБОТЫ</span>
+								</button>
+								<div class="spollers__body">Расскажите, каким вы видите свой будущий сад. Планируете ли
+									создание детской площадки, зоны барбекю, плодового сада. Вместе составим подробное
+									задание на проектирование, учтем все нюансы и пожелания.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="submit" class="steps-designing__button button">Получить консультацию</button>
+			</section>
+			<section class="designing__order order-designing">
+				<h2 class="order-designing__title _section-title">Заказать разработку индивидуального проекта </h2>
+				<div class="order-designing__price">
+					<span>Стоимость разработки проекта: </span><span>от 250 000 рублей</span>
+				</div>
+				<div class="order-designing__text">Для точной оценки стоимости разработки ландшафтного проекта просим
+					заполнить бриф</div>
+				<button type="button" class="order-designing__button button">Заполнить бриф</button>
+			</section>
+			<section class="designing__team team-designing">
+				<div class="team-designing__container">
+					<h2 class="team-designing__title _section-title">Команда архитекторов</h2>
+					<div class="team-designing__slider swiper">
+						<div class="team-designing__wrapper swiper-wrapper">
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+							<div class="team-designing__slide slide-team-designing swiper-slide">
+								<div class="slide-team-designing__photo">
+									<img data-src="@img/designing/team-1.jpg" alt="" width="298" height="420">
+								</div>
+								<div class="slide-team-designing__name">Павел Мусс</div>
+								<div class="slide-team-designing__position">Генеральный директор</div>
+							</div>
+						</div>
+						<div class="team-designing__nav">
+							<button class="team-designing__prev">
+								<img data-src="@img/arr-left-small.svg" alt="">
+							</button>
+							<button class="team-designing__next">
+								<img data-src="@img/arr-left-small.svg" alt="">
+							</button>
+						</div>
+						<div class="team-designing__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="services">
+				<h2 class="services__title _section-title">от проекта</h2>
+				<div class="services__subtitle _section-title">до воплощеия и ухода</div>
+				<div class="services__list">
+					<div class="services__item item-services">
+						<div class="item-services__image">
+							<img data-src="@img/services/service-1.jpg" alt="">
+						</div>
+						<div class="item-services__num">01</div>
+						<div class="item-services__title">ЛАНДШАФТНОЕ ПРОЕКТИРОВАНИЕ</div>
+						<p class="item-services__text">Разработка дизайн-проекта ландшафта – это комплексный труд не
+							только дизайнера, но и инженера, который планирует прокладку коммуникаций, почвоведа,
+							агронома и прочих специалистов. </p>
+					</div>
+					<div class="services__item item-services">
+						<div class="item-services__image">
+							<img data-src="@img/services/service-2.jpg" alt="">
+						</div>
+						<div class="item-services__num">02</div>
+						<div class="item-services__title">ЛАНДШАФТНОЕ СТРОИТЕЛЬСТВО</div>
+						<p class="item-services__text">Cтроение и прилегающая к нему территория рассматриваются в
+							комплексе, а работы по благоустройству становятся логическим завершением. </p>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<h2 class="reviews__title _section-title">отзывы</h2>
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-1.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на
+									высшем уровне. Продавцы-консультанты вежливы, тактичны и профессиональны. Растений
+									очень много. Купила отличные туи и большое кол-во цветов. На весну заказала
+									Гортензию сорта "Бобо". Нигде не могла найти именно этот сорт. Здорово что можно
+									заказать нужное растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-2.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов. На весну заказала Гортензию сорта
+									"Бобо". Нигде не могла найти именно этот сорт. Здорово что можно заказать нужное
+									растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-3.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-1.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на
+									высшем уровне. Продавцы-консультанты вежливы, тактичны и профессиональны. Растений
+									очень много. Купила отличные туи и большое кол-во цветов. На весну заказала
+									Гортензию сорта "Бобо". Нигде не могла найти именно этот сорт. Здорово что можно
+									заказать нужное растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-2.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов. На весну заказала Гортензию сорта
+									"Бобо". Нигде не могла найти именно этот сорт. Здорово что можно заказать нужное
+									растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-3.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-1.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на
+									высшем уровне. Продавцы-консультанты вежливы, тактичны и профессиональны. Растений
+									очень много. Купила отличные туи и большое кол-во цветов. На весну заказала
+									Гортензию сорта "Бобо". Нигде не могла найти именно этот сорт. Здорово что можно
+									заказать нужное растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-2.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов. На весну заказала Гортензию сорта
+									"Бобо". Нигде не могла найти именно этот сорт. Здорово что можно заказать нужное
+									растение.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+							<div class="reviews__slide slide-reviews swiper-slide">
+								<div class="slide-reviews__avatar">
+									<img src="@img/reviews/avatar-3.jpg" alt="">
+								</div>
+								<div class="slide-reviews__text">
+									Большое спасибо менеджерам по продажам. Обслуживание на высшем уровне.
+									Продавцы-консультанты вежливы, тактичны и профессиональны. Растений очень много.
+									Купила отличные туи и большое кол-во цветов.
+								</div>
+								<div class="slide-reviews__footer">
+									<div class="slide-reviews__name">Ирина</div>
+									<div class="slide-reviews__date">22.03.2022</div>
+								</div>
+							</div>
+						</div>
+						<div class="reviews__nav nav-reviews">
+							<button class="nav-reviews__prev">
+								<img data-src="@img/arr-left-small.svg" alt="">
+							</button>
+							<button class="nav-reviews__next">
+								<img data-src="@img/arr-left-small.svg" alt="">
+							</button>
+						</div>
+						<div class="reviews__pagination"></div>
+					</div>
+				</div>
+			</section>
+			<section class="demo">
+				<h2 class="demo__title _section-title">демонстрационный проект</h2>
+				<div class="demo__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+					<div class="demo__wrapper swiper-wrapper"
+						style="cursor: grab; transition-duration: 0ms; transform: translate3d(-4911.28px, 0px, 0px);">
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy _lazy-loaded swiper-lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo11.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy _lazy-loaded swiper-lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo1.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy _lazy-loaded swiper-lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo2.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy swiper-lazy-loaded _lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo4.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide swiper-slide-prev"
+							style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy _lazy-loaded swiper-lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo5.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide swiper-slide-active"
+							style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy swiper-lazy-loaded _lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo6.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide swiper-slide-next"
+							style="max-height: 90vh; margin-right: 50px;">
+							<img alt="" class="swiper-lazy swiper-lazy-loaded _lazy-loaded" width="500" height="500"
+								loading="lazy" src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo7.jpg"
+								data-ll-status="loaded">
+
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo8.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo8.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo9.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo9.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo10.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo10.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo12.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo12.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo13.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo13.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo14.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo14.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo15.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo15.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo16.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo16.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo17.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo17.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo18.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo18.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo19.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo19.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo20.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo20.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo21.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo21.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo22.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo22.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo23.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo23.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo25.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo25.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo26.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo26.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo27.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo27.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/dwmo24.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/dwmo24.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo28.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo28.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo29.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo29.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo30.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo30.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo31.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo31.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo32.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo32.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo33.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo33.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo34.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo34.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo35.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo35.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo36.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo36.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo37.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo37.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo38.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo38.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo39.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo39.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo40.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo40.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo41.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo41.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo42.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo42.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo43.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo43.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo44.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo44.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo45.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo45.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo46.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo46.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo47.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo47.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo48.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo48.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+						<div class="demo__slide swiper-slide" style="max-height: 90vh; margin-right: 50px;">
+							<img data-src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo49.jpg" alt=""
+								class="swiper-lazy" width="500" height="500" loading="lazy"
+								src="http://novo.some-dev.ru/wp-content/uploads/2022/09/demo49.jpg"
+								data-ll-status="native">
+							<div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+						</div>
+					</div>
+					<div class="demo__nav nav-demo">
+						<button class="nav-demo__prev swiper-button-disabled" disabled="">
+							<img data-src="img/arr-left-small.svg" alt="" loading="lazy" src="img/arr-left-small.svg"
+								data-ll-status="loaded" class="_lazy-loaded">
+						</button>
+						<button class="nav-demo__next">
+							<img data-src="img/arr-left-small.svg" alt="" loading="lazy" src="img/arr-left-small.svg"
+								data-ll-status="loaded" class="_lazy-loaded">
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="designing__landscape landscape-designing">
+				<h2 class="landscape-designing__title _section-title">ПРОЕКТИРУЕМ УДОБНЫЙ <br />
+					И ФУНКЦИОНАЛЬНЫЙ ЛАНДШАФТ</h2>
+				<div class="landscape-designing__list">
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПАРАДНАЯ ЗОНА</div>
+							<div class="item-landscape-designing__text">Проработанная концепция входной группы для
+								встречи гостей, подчеркивающая статус владельца.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-1.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПРИВАТНОСТЬ</div>
+							<div class="item-landscape-designing__text">Уединенные «островки» внутри сада, формирование
+								многоярусных кулис из растений, позволяющих создать атмосферу уюта на участке,
+								растворить границы территорий и в то же время закрыться от соседей.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-2.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПАРАДНАЯ ЗОНА</div>
+							<div class="item-landscape-designing__text">Проработанная концепция входной группы для
+								встречи гостей, подчеркивающая статус владельца.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-1.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПРИВАТНОСТЬ</div>
+							<div class="item-landscape-designing__text">Уединенные «островки» внутри сада, формирование
+								многоярусных кулис из растений, позволяющих создать атмосферу уюта на участке,
+								растворить границы территорий и в то же время закрыться от соседей.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-2.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПАРАДНАЯ ЗОНА</div>
+							<div class="item-landscape-designing__text">Проработанная концепция входной группы для
+								встречи гостей, подчеркивающая статус владельца.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-1.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+					<div class="landscape-designing__item item-landscape-designing">
+						<div class="item-landscape-designing__content">
+							<div class="item-landscape-designing__title">ПРИВАТНОСТЬ</div>
+							<div class="item-landscape-designing__text">Уединенные «островки» внутри сада, формирование
+								многоярусных кулис из растений, позволяющих создать атмосферу уюта на участке,
+								растворить границы территорий и в то же время закрыться от соседей.</div>
+						</div>
+						<div class="item-landscape-designing__image">
+							<img src="@img/landscape/landscape-2.jpg" alt="ПАРАДНАЯ ЗОНА">
+						</div>
+					</div>
+				</div>
+
+			</section>
+			@@include('html/_consult.htm',{})
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

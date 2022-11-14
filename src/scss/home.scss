@@ -1,0 +1,185 @@
+//====================================================================================================
+.whywe {
+    // .whywe__container
+    &__container {
+    }
+    // .whywe__title
+    &__title {
+    }
+    // .whywe__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(300), 1fr));
+        gap: rem(40);
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(400), 1fr));
+            gap: rem(40) rem(30);
+        }
+    }
+    // .whywe__item
+    &__item {
+        &._callback {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
+.item-whywe {
+    // .item-whywe__icon
+    &__icon {
+        margin-bottom: rem(20);
+    }
+    // .item-whywe__title
+    &__title {
+        margin-bottom: rem(15);
+        @include adaptiveValue("font-size", 24, 18, 1440, 767, 1);
+        text-transform: uppercase;
+    }
+    // .item-whywe__text
+    &__text {
+    }
+}
+//========================================================================================================================================================
+.results {
+    &._results-page {
+        @media (max-width: $mobile) {
+            margin-bottom: 0;
+        }
+    }
+    // .results__container
+    &__container {
+        @include adaptiveValue("padding-top", 120, 30, 1440, 991, 1);
+        @include adaptiveValue("padding-bottom", 93, 25, 1440, 991, 1);
+        position: relative;
+    }
+    // .results__image
+    &__image {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0.1;
+        z-index: -1;
+
+        width: 100%;
+    }
+    // .results__title
+    &__title {
+    }
+    // .results__content
+    &__content {
+        @media (min-width: em(1120)) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    // .results__left
+    &__left {
+        flex: 0 0 rem(785);
+
+        ._results-page & {
+            p {
+                margin-bottom: rem(20);
+
+                &:last-of-type {
+                    margin-bottom: rem(40);
+                }
+            }
+        }
+    }
+    // .results__right
+    &__right {
+        display: flex;
+        @include adaptiveValue("gap", 100, 30, 1610, 991, 1);
+        margin-bottom: rem(30);
+
+        ._results-page & {
+            margin-top: rem(40);
+            p {
+                margin-bottom: rem(20);
+
+                &:last-of-type {
+                    margin-bottom: rem(40);
+                }
+            }
+
+            @media (min-width: em(1120)) {
+                margin-top: rem(0);
+            }
+        }
+
+        @media (min-width: em(1120)) {
+            margin-bottom: 0;
+        }
+    }
+}
+.left-results {
+    // .left-results__text
+    &__text {
+        margin-bottom: rem(30);
+    }
+}
+.right-results {
+    // .right-results__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+            gap: rem(15);
+        }
+        @media (min-width: em(1120)) {
+            display: block;
+        }
+    }
+    // .right-results__num
+    &__num {
+        margin-bottom: rem(10);
+        font-weight: 700;
+        @include adaptiveValue("font-size", 80, 32, 1440, 991, 1);
+
+        @media (min-width: $mobileSmall) {
+            margin-bottom: rem(20);
+        }
+    }
+    // .right-results__text
+    &__text {
+        @include adaptiveValue("font-size", 24, 18, 1440, 991, 1);
+    }
+}
+//========================================================================================================================================================
+.partners {
+    // .partners__container
+    &__container {
+    }
+    // .partners__title
+    &__title {
+    }
+    // .partners__slider
+    &__slider {
+    }
+    // .partners__wrapper
+    &__wrapper {
+    }
+    // .partners__slide
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: rem(164);
+        &:first-child {
+            padding-left: 0;
+        }
+
+        @media (min-width: $tablet) {
+            padding: 0 rem(65);
+
+            &:not(:last-child) {
+                border-right: 1px solid #e0e6ec;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.reviews {
+    // .reviews__container
+    &__container {
+        position: relative;
+    }
+    // .reviews__title
+    &__title {
+        text-align: left;
+    }
+    // .reviews__slider
+    &__slider {
+    }
+    // .reviews__wrapper
+    &__wrapper {
+        padding: rem(40) 0;
+    }
+    // .reviews__slide
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        padding: rem(56) rem(24) rem(24);
+        background-color: $yellow;
+        color: $grey_dark;
+    }
+    // .reviews__nav
+    &__nav {
+        position: absolute;
+        top: rem(8);
+        right: 0;
+
+        display: flex;
+        gap: rem(15);
+    }
+    // .reviews__pagination
+    &__pagination {
+        display: flex;
+        justify-content: center;
+        gap: rem(12);
+        margin-top: rem(40);
+
+        .swiper-pagination-bullet {
+            display: block;
+            width: rem(12);
+            height: rem(12);
+            background-color: $grey;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.swiper-pagination-bullet-active {
+                background-color: $green;
+            }
+        }
+    }
+}
+.slide-reviews {
+    // .slide-reviews__avatar
+    &__avatar {
+        position: absolute;
+        top: rem(-40);
+        left: rem(24);
+    }
+    // .slide-reviews__text
+    &__text {
+        margin-bottom: rem(32);
+        border-bottom: 1px solid $yellow;
+    }
+    // .slide-reviews__footer
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+
+        margin-top: auto;
+    }
+    // .slide-reviews__name
+    &__name {
+        font-weight: 700;
+        color: $mainColor;
+    }
+    // .slide-reviews__date
+    &__date {
+    }
+}
+.nav-reviews {
+    &__prev,
+    &__next {
+        flex: 0 0 rem(48);
+        width: rem(48);
+        height: rem(48);
+        border: 1px solid $grey_dark;
+        border-radius: 50%;
+    }
+    // .nav-reviews__prev
+    &__prev {
+    }
+    // .nav-reviews__next
+    &__next {
+        transform: rotate(-180deg);
+    }
+}

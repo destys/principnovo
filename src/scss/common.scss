@@ -1,0 +1,52 @@
+// Заголовки, общие БЄМ блоки и проче...
+section {
+    @include adaptiveValue("margin-bottom", 100, 40, 1440, 474, 1);
+    max-width: rem(1920);
+    width: 100%;
+
+    @media (min-width: em(1921)) {
+        margin: 0 auto !important;
+        margin-bottom: rem(100) !important;
+    }
+
+    &._mb0 {
+        margin-bottom: 0;
+    }
+}
+
+._section-title {
+    margin-bottom: rem(40);
+    @include adaptiveValue("margin-bottom", 40, 25, 1440, 767, 1);
+    font-size: rem(48);
+    @include adaptiveValue("font-size", 48, 24, 1440, 474, 1);
+    text-transform: uppercase;
+    text-align: center;
+
+    &._left {
+        text-align: left;
+    }
+}
+
+p {
+    color: $grey_dark;
+}
+
+a {
+    transition: color 0.2s linear;
+
+    &:hover {
+        color: $green;
+    }
+}
+
+// before/after slider
+
+._side-title {
+    margin-bottom: rem(20);
+    font-size: rem(24);
+    text-transform: uppercase;
+}
+
+.wpcf7-form-control-wrap {
+    margin-bottom: rem(30);
+}

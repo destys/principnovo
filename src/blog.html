@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Блог"
+})
+
+<body>
+    <div class="wrapper">
+        @@include('html/_header.htm',{
+        "class":""
+        })
+        <main class="page">
+            <section class="blog">
+                <div class="blog__container">
+                    <h1 class="blog__title _section-title">Блог</h1>
+                    <div class="blog__top top-blog">
+                        <p class="top-blog__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                            eget justo sed quam fermentum bibendum id at justo. Donec varius interdum leo at tempor.
+                            Nulla facilisi. Phasellus in diam enim. Praesent pulvinar venenatis tellus quis consectetur.
+                            Phasellus sodales nisi quis eros lobortis tempor sit amet ac justo. Vestibulum tincidunt
+                            sollicitudin lobortis. Vestibulum pharetra accumsan nunc in varius. Nam tincidunt elit erat,
+                            in hendrerit massa maximus efficitur. Etiam dapibus, est ac congue scelerisque, orci ligula
+                            consequat nisi, et rutrum risus nunc non tellus.</p>
+                        <div class="top-blog__subscribe subscribe-top-blog">
+                            <div class="subscribe-top-blog__title">Подписаться на рассылку</div>
+                            <form action="#" class="subscribe-top-blog__form">
+                                <label class="subscribe-top-blog__label">Ваш email:</label>
+                                <input autocomplete="off" type="text" name="form[]" data-error="Ошибка"
+                                    placeholder="Введите ваш email" class="subscribe-top-blog__input input">
+                                <div class="subscribe-top-blog__footer">
+                                    <button type="submit" class="subscribe-top-blog__button button">Подписаться</button>
+                                    <div class="subscribe-top-blog__rules">Нажимая кнопку «подписаться», вы даете
+                                        согласие на обработку персональных данных</div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog__first first-blog first-blog__container">
+                    <a href="#" class="first-blog__image">
+                        <img data-src="@img/blog/post-first.jpg" alt="">
+                    </a>
+                    <div class="first-blog__content">
+                        <a href="#" class="first-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                        <div class="first-blog__date">30.11.2021</div>
+                        <p class="first-blog__excerpt">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec nam aliquam sem et tortor
+                            consequat id. Lectus proin nibh nisl condimentum id venenatis. Accumsan lacus vel facilisis
+                            volutpat.
+                            <br />
+                            Hendrerit gravida rutrum quisque non. Nunc sed velit dignissim sodales ut eu. A cras semper
+                            auctor neque vitae tempus quam pellentesque. Mattis molestie a iaculis at erat pellentesque
+                            adipiscing. Sit amet venenatis urna cursus eget nunc. Lorem mollis aliquam ut porttitor leo.
+                            Et netus et malesuada fames ac turpis egestas integer eget.
+                            <br />
+                            Hendrerit gravida rutrum quisque non. Nunc sed velit dignissim sodales ut eu. A cras semper
+                            auctor neque vitae tempus quam pellentesque. Mattis molestie a iaculis at erat pellentesque
+                            adipiscing. Sit amet venenatis urna cursus eget nunc. Lorem mollis aliquam ut porttitor leo.
+                            Et netus et malesuada fames ac turpis egestas integer eget.
+                        </p>
+                    </div>
+                </div>
+                <div class="blog__list">
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                    <article class="blog__item item-blog">
+                        <div class="item-blog__image">
+                            <img data-src="@img/blog/post-2.jpg" alt="">
+                        </div>
+                        <div class="item-blog__date">30.11.2021</div>
+                        <a href="#" class="item-blog__title">РАСТЕНИЯ И КЛИМАТ. ЧТО ВЫБРАТЬ ДЛЯ УЧАСТКА?</a>
+                    </article>
+                </div>
+                <div class="blog__pagination">
+                    <div class="nav-links">
+                        <span aria-current="page" class="page-numbers current">1</span>
+                        <a class="page-numbers" href="http://novo.some-dev.ru/blog/page/2/">2</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="http://novo.some-dev.ru/blog/page/4/">4</a>
+                        <a class="next page-numbers" href="http://novo.some-dev.ru/blog/page/2/">»</a></div>
+                </div>
+            </section>
+        </main>
+        @@include('html/_footer.htm',{})
+    </div>
+    @@include('html/_popup.htm',{})
+    @@include('html/_js.htm',{})
+</body>
+
+</html>

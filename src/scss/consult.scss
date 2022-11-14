@@ -1,0 +1,120 @@
+.consult {
+    display: flex;
+    justify-content: center;
+    gap: rem(160);
+    padding: 0 rem(15);
+    @include adaptiveValue("gap", 160, 30, 1920, 1366, 1);
+
+    @media (min-width: em(1280)) {
+        justify-content: flex-start;
+        padding: 0;
+    }
+
+    &._contacts {
+        align-items: center;
+    }
+
+    // .consult__image
+    &__image {
+        display: none;
+        flex: 1 1 auto;
+
+        img {
+            width: 100%;
+            max-height: rem(680);
+        }
+
+        @media (min-width: em(1280)) {
+            display: block;
+            max-width: 50%;
+        }
+    }
+    // .consult__form
+    &__form {
+        padding: rem(50) rem(40);
+        max-width: 100%;
+        border: 1px solid $grey_dark;
+
+        ._contacts & {
+            padding: 0;
+            border: 0;
+        }
+
+        @media (min-width: $mobile) {
+            max-width: 80%;
+        }
+
+        @media (min-width: em(1280)) {
+            flex: 0 0 rem(519);
+
+            ._contacts & {
+                flex: 0 0 rem(579);
+            }
+        }
+    }
+}
+.form-consult {
+    // .form-consult__title
+    &__title {
+        margin-bottom: rem(20);
+        line-height: math.div(45, 36);
+        @include adaptiveValue("font-size", 36, 24, 1440, 474, 1);
+        text-transform: uppercase;
+        text-align: center;
+
+        ._contacts & {
+            margin-bottom: rem(30);
+            text-align: left;
+        }
+    }
+    // .form-consult__text
+    &__text {
+        margin-bottom: rem(30);
+        color: $grey_dark;
+        text-align: center;
+    }
+    // .form-consult__fields
+    &__fields {
+    }
+    // .form-consult__label
+    &__label {
+        display: block;
+        margin-bottom: rem(10);
+        color: $grey_dark;
+    }
+    // .form-consult__input
+    &__input {
+    }
+    // .form-consult__rules
+    &__rules {
+        margin-bottom: rem(30);
+        font-size: rem(14);
+        color: $grey_dark;
+
+        ._contacts & {
+            margin-bottom: 0;
+        }
+    }
+    // .form-consult__button
+    &__button {
+        width: 100%;
+
+        ._contacts & {
+            @media (min-width: $mobileSmall) {
+                flex: 0 0 rem(163);
+            }
+        }
+    }
+    // .form-consult__footer
+    &__footer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: rem(30);
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}

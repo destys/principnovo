@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Проекты"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{
+		"class":""
+		})
+		<main class="page">
+			<section class="main-projects">
+				<h2 class="main-projects__title _section-title" style="margin-top: 59px;">Наши проекты</h2>
+				<ul class="main-projects__nav nav-main-projects">
+					<li class="nav-main-projects__item">
+						<a href="http://192.168.0.102:8080/projects.html" class="nav-main-projects__link">Все работы</a>
+					</li>
+					<li class="nav-main-projects__item">
+						<a href="http://192.168.0.102:8080/projects2.html" class="nav-main-projects__link">Общественные пространства</a>
+					</li>
+					<li class="nav-main-projects__item">
+						<a href="http://192.168.0.102:8080/projects3.html" class="nav-main-projects__link">Частные сады</a>
+					</li>
+				</ul>
+				@@include('html/_projects.htm',{})
+				<button type="submit" class="button button_transparent">Смотреть все</button>
+			</section>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

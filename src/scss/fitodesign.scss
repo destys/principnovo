@@ -1,0 +1,586 @@
+.fitodesign {
+    // .fitodesign__app
+    &__app {
+        margin-bottom: rem(100);
+    }
+    // .fitodesign__individual
+    &__individual {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(60);
+        padding: rem(30) rem(15);
+
+        @media (min-width: em(1240)) {
+            padding: rem(115) 0;
+            flex-direction: row;
+        }
+
+        @media (min-width: $pc) {
+            max-width: none !important;
+            background-color: $yellow;
+        }
+    }
+    // .fitodesign__range
+    &__range {
+    }
+    // .fitodesign__landscaping
+    &__landscaping {
+    }
+    // .fitodesign__gallery
+    &__gallery {
+    }
+    // .fitodesign__faq
+    &__faq {
+    }
+    // .fitodesign__price
+    &__price {
+        padding: rem(60) 0;
+        background: url("@img/fitodesign/fitodesign-price-bg.jpg") 0 0 no-repeat;
+        background-size: cover !important;
+        line-height: 1.3;
+        color: #fff;
+
+        @media (min-width: $mobile) {
+            padding: rem(120) 0;
+        }
+    }
+}
+//========================================================================================================================================================
+.app-fitodesign {
+    // .app-fitodesign__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
+        gap: rem(30);
+    }
+    // .app-fitodesign__item
+    &__item {
+    }
+}
+.item-fitodesign-app {
+    // .item-fitodesign-app__image
+    &__image {
+        margin-bottom: rem(30);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            ._newyear & {
+                min-height: 350px;
+            }
+        }
+    }
+    // .item-fitodesign-app__title
+    &__title {
+        @include adaptiveValue("font-size", 24, 16, 1440, 767, 1);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+//========================================================================================================================================================
+.individual-fitodesign {
+    // .individual-fitodesign__content
+    &__content {
+        padding: 0 rem(15);
+        @media (min-width: $pc) {
+            padding: 0;
+            @include adaptiveValue("margin-left", 150, 15, 1920, 1420, 1);
+        }
+    }
+    // .individual-fitodesign__images
+    &__images {
+        display: none;
+        gap: rem(30);
+
+        @media (min-width: $mobile) {
+            display: flex;
+        }
+    }
+}
+.content-individual-fitodesign {
+    // .content-individual-fitodesign__title
+    &__title {
+        text-align: left;
+    }
+    // .content-individual-fitodesign__text
+    &__text {
+        margin-bottom: rem(40);
+        color: $grey_dark;
+
+        ul {
+            margin-bottom: rem(25);
+
+            li {
+                list-style: inside;
+            }
+        }
+    }
+    // .content-individual-fitodesign__button
+    &__button {
+    }
+}
+.images-individual-fitodesign {
+    // .images-individual-fitodesign__item
+    &__item {
+        img {
+            width: 100%;
+        }
+    }
+}
+//========================================================================================================================================================
+.range-fitodesign {
+    // .range-fitodesign__container
+    &__container {
+    }
+    // .range-fitodesign__title
+    &__title {
+        text-align: left;
+    }
+    // .range-fitodesign__top
+    &__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: rem(30);
+        margin-bottom: rem(40);
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+        }
+    }
+    // .range-fitodesign__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(rem(200), 1fr));
+        gap: rem(30);
+    }
+    // .range-fitodesign__item
+    &__item {
+    }
+}
+.top-fitodesign-range {
+    // .top-fitodesign-range__left
+    &__left {
+        flex: 1 1 auto;
+        max-width: rem(870);
+    }
+    // .top-fitodesign-range__text
+    &__text {
+        margin-bottom: rem(30);
+        color: $grey_dark;
+    }
+    // .top-fitodesign-range__mark
+    &__mark {
+        display: flex;
+        align-items: center;
+        gap: rem(15);
+        padding: rem(16);
+        border-radius: 100px;
+        background-color: #f0f5d8;
+        color: $grey_dark;
+
+        img {
+            flex: 0 0 rem(24);
+            width: rem(24);
+            height: rem(24);
+        }
+    }
+    // .top-fitodesign-range__button
+    &__button {
+        @media (min-width: $tablet) {
+            flex: 0 0 rem(272);
+        }
+    }
+}
+.item-range-fitodesign {
+    // .item-range-fitodesign__image
+    &__image {
+        margin-bottom: rem(30);
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .item-range-fitodesign__title
+    &__title {
+        @include adaptiveValue("font-size", 24, 16, 1440, 767, 1);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
+//========================================================================================================================================================
+.landscaping-fitodesign {
+    // .landscaping-fitodesign__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    // .landscaping-fitodesign__title
+    &__title {
+    }
+    // .landscaping-fitodesign__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(rem(275), 1fr));
+        gap: rem(30);
+        margin-bottom: rem(40);
+
+        @media (min-width: $mobile) {
+            display: block;
+        }
+    }
+    // .landscaping-fitodesign__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: rem(8);
+
+        &:first-child {
+            .item-landscaping-fitodesign__inner {
+                border-top: 0;
+            }
+        }
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            align-items: center;
+            gap: rem(70);
+        }
+    }
+    // .landscaping-fitodesign__button
+    &__button {
+        align-self: center;
+    }
+}
+.item-landscaping-fitodesign {
+    // .item-landscaping-fitodesign__icon
+    &__icon {
+    }
+    // .item-landscaping-fitodesign__inner
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: rem(32) 0;
+        width: 100%;
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            align-items: center;
+            border-top: 1px solid $grey;
+        }
+    }
+    // .item-landscaping-fitodesign__time
+    &__time {
+        display: flex;
+        gap: rem(15);
+        margin-bottom: rem(20);
+        line-height: math.div(27, 18);
+
+        &::before {
+            content: "";
+            flex: 0 0 rem(24);
+            width: rem(24);
+            height: rem(24);
+            background: url("@img/fitodesign/time.svg") 0 0 no-repeat;
+        }
+
+        @media (min-width: $mobile) {
+            margin-bottom: 0;
+            flex: 0 0 rem(242);
+        }
+    }
+    // .item-landscaping-fitodesign__content
+    &__content {
+        flex: 1 1 auto;
+
+        h3 {
+            margin-bottom: rem(16);
+            line-height: math.div(28, 24);
+            font-size: rem(24);
+            text-transform: uppercase;
+        }
+    }
+}
+//========================================================================================================================================================
+.gallery-fitodesign {
+    // .gallery-fitodesign__title
+    &__title {
+    }
+    // .gallery-fitodesign__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(rem(275), 1fr));
+        gap: rem(30);
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(auto-fit, minmax(rem(500), 1fr));
+        }
+    }
+    // .gallery-fitodesign__item
+    &__item {
+        img {
+            width: 100%;
+            height: 100%;
+            max-height: rem(370);
+            object-fit: cover;
+        }
+    }
+}
+//========================================================================================================================================================
+.faq-fitodesign {
+    // .faq-fitodesign__container
+    &__container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        @media (min-width: em(1120)) {
+            flex-direction: row;
+            gap: rem(60);
+        }
+    }
+    // .faq-fitodesign__title
+    &__title {
+        @media (min-width: em(1120)) {
+            flex: 0 0 rem(356);
+            text-align: left;
+        }
+    }
+    // .faq-fitodesign__list
+    &__list {
+        flex: 1 1 auto;
+    }
+    // .faq-fitodesign__item
+    &__item {
+        padding: rem(15) rem(20);
+        transition: background-color 0.2s linear;
+        border-bottom: 1px solid $grey;
+
+        cursor: pointer;
+
+        &._active {
+            background-color: $yellow;
+            border-color: transparent;
+        }
+
+        @media (min-width: $mobile) {
+            padding: rem(30) rem(40);
+        }
+    }
+}
+.item-faq-fitodesign {
+    // .item-faq-fitodesign__top
+    &__top {
+        display: flex;
+        align-items: center;
+        gap: rem(20);
+    }
+    // .item-faq-fitodesign__num
+    &__num {
+        padding-bottom: rem(20);
+        font-weight: 700;
+        @include adaptiveValue("font-size", 40, 28, 1420, 767, 1);
+        color: $grey;
+        transition: color 0.2s linear;
+
+        ._active & {
+            color: $mainColor;
+        }
+    }
+    // .item-faq-fitodesign__title
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: rem(20);
+        width: 100%;
+        @include adaptiveValue("font-size", 24, 18, 1420, 767, 1);
+        border-bottom: 1px solid transparent;
+
+        &::after {
+            content: "+";
+            flex: 0 0 rem(32);
+            width: rem(32);
+            height: rem(32);
+
+            background-color: $green;
+            border-radius: 50%;
+
+            font-size: rem(24);
+            color: #fff;
+            text-align: center;
+        }
+
+        ._active & {
+            border-color: #d8d8d8;
+            &::after {
+                content: "-";
+                background-color: #d8d8d8;
+            }
+        }
+    }
+    // .item-faq-fitodesign__body
+    &__body {
+        margin-top: rem(20);
+        padding-left: rem(55);
+    }
+}
+//========================================================================================================================================================
+.price-fitodesign {
+    // .price-fitodesign__container
+    &__container {
+        max-width: rem(687);
+    }
+    // .price-fitodesign__title
+    &__title {
+        margin-bottom: rem(40);
+    }
+    // .price-fitodesign__form
+    &__form {
+        margin-bottom: rem(40);
+        padding: 0 rem(15);
+
+        @media (min-width: $mobile) {
+            padding: 0 rem(34);
+        }
+    }
+}
+.form-price-fitodesign {
+    // .form-price-fitodesign__label
+    &__label {
+        display: block;
+        margin-bottom: rem(10);
+    }
+    // .form-price-fitodesign__input
+    &__input {
+        margin-bottom: rem(15);
+        &:last-of-type {
+            margin-bottom: rem(20);
+        }
+    }
+    // .form-price-fitodesign__block
+    &__block {
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+
+        @media (min-width: $mobile) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    // .form-price-fitodesign__checkboxes
+    &__checkboxes {
+        font-size: rem(20);
+    }
+
+    // .form-price-fitodesign__count
+    &__count {
+        font-size: rem(20);
+
+        span {
+            &:last-child {
+                font-weight: 700;
+                @include adaptiveValue("font-size", 24, 16, 767, 550, 1);
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(10);
+        }
+    }
+    // .form-price-fitodesign__total
+    &__total {
+        margin-top: rem(30);
+        margin-bottom: rem(40);
+    }
+    // .form-price-fitodesign__footer
+    &__footer {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: rem(30);
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    // .form-price-fitodesign__button
+    &__button {
+        @media (min-width: $mobileSmall) {
+            flex: 0 0 rem(211);
+        }
+    }
+    // .form-price-fitodesign__policy
+    &__policy {
+        font-size: rem(14);
+    }
+}
+.total-form-price {
+    // .total-form-price__title
+    &__title {
+        margin-bottom: rem(20);
+        font-size: rem(24);
+        text-transform: uppercase;
+    }
+    // .total-form-price__content
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: rem(30);
+
+        @media (min-width: $mobileSmall) {
+            flex-direction: row;
+            align-items: center;
+            gap: rem(10);
+        }
+    }
+    // .total-form-price__left
+    &__left {
+    }
+    // .total-form-price__item
+    &__item {
+        line-height: 1.5;
+        font-size: rem(20);
+
+        span {
+            &:last-child {
+                font-weight: 700;
+                @include adaptiveValue("font-size", 24, 16, 767, 550, 1);
+            }
+        }
+    }
+    // .total-form-price__right
+    &__right {
+        @include adaptiveValue("padding", 20, 10, 767, 550, 1);
+        background-color: rgba(#fff, 0.1);
+        border: 1px solid #ffffff;
+        text-align: center;
+        cursor: pointer;
+
+        @media (min-width: $mobileSmall) {
+            flex: 0 0 rem(180);
+        }
+
+        @media (min-width: em(550)) {
+            flex: 0 0 rem(211);
+        }
+    }
+    // .total-form-price__title-right
+    &__title-right {
+        margin-bottom: rem(10);
+        font-size: rem(24);
+        text-transform: uppercase;
+    }
+    // .total-form-price__text
+    &__text {
+        font-size: rem(14);
+    }
+}

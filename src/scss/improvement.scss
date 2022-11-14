@@ -1,0 +1,109 @@
+.improvement {
+    // .improvement__complex
+    &__complex {
+    }
+    // .improvement__types
+    &__types {
+    }
+}
+//========================================================================================================================================================
+
+.complex-improvement {
+    // .complex-improvement__container
+    &__container {
+    }
+    // .complex-improvement__title
+    &__title {
+    }
+    // .complex-improvement__list
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: rem(30);
+
+        @media (min-width: $tablet) {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(rem(150), 1fr));
+            gap: rem(30);
+
+            ._newyear & {
+                grid-template-columns: repeat(auto-fit, minmax(rem(350), 1fr));
+            }
+        }
+    }
+    // .complex-improvement__item
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 100%;
+
+        @media (min-width: $mobileSmall) {
+            flex: 1 0 32%;
+        }
+
+        @media (min-width: $mobile) {
+            flex: 0 0 30%;
+        }
+    }
+}
+.item-complex-improvement {
+    // .item-complex-improvement__icon
+    &__icon {
+        text-align: center;
+        margin-bottom: rem(20);
+
+        @media (min-width: $tablet) {
+            text-align: left;
+        }
+    }
+    // .item-complex-improvement__title
+    &__title {
+        text-align: center;
+        color: $grey_dark;
+    }
+}
+//========================================================================================================================================================
+.types-improvement {
+    // .types-improvement__title
+    &__title {
+    }
+    // .types-improvement__list
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(rem(320), 1fr));
+
+        @media (min-width: $tablet) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(450), 1fr));
+        }
+
+        @media (min-width: $pc) {
+            grid-template-columns: repeat(auto-fill, minmax(rem(550), 1fr));
+        }
+        gap: rem(30);
+    }
+    // .types-improvement__item
+    &__item {
+        max-width: 100%;
+    }
+}
+.item-types-improvement {
+    // .item-types-improvement__image
+    &__image {
+        margin-bottom: rem(20);
+        height: 90%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    // .item-types-improvement__title
+    &__title {
+        font-size: rem(20);
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

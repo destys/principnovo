@@ -1,0 +1,40 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding: rem(16) rem(40);
+	background-color: $green;
+	border-radius: 4px;
+	color: #fff;
+	width: 100%;
+
+	&_transparent {
+		width: auto;
+		background-color: transparent;
+		border: 1px solid $mainColor;
+		color: $mainColor;
+
+		transition: background-color 0.2s ease-in-out, color 0.2s linear, border-color 0.2s linear;
+
+		&:hover {
+			background-color: $green;
+			border-color: $green;
+			color: #fff;
+		}
+	}
+
+	@media (min-width: $mobileSmall) {
+		width: auto;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&._fw {
+		width: 100%;
+	}
+}
