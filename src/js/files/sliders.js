@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Autoplay, EffectFade, Navigation, Pagination, Thumbs, Lazy, EffectCoverflow } from 'swiper';
+import Swiper, { Autoplay, EffectFade, Navigation, Pagination, Thumbs, EffectCoverflow } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -104,7 +104,7 @@ function initSliders() {
 	}
 	if (document.querySelector('.intro-project__slider')) { // Указываем скласс нужного слайдера
 		let projectThumbs = new Swiper('.intro-project__slider_thumbs', {
-			modules: [Navigation, Lazy],
+			modules: [Navigation],
 			observer: true,
 			observeParents: true,
 			slidesPerView: 10,
@@ -145,7 +145,7 @@ function initSliders() {
 		let projectSlider = new Swiper('.intro-project__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
-			modules: [Navigation, Thumbs, EffectFade, Lazy],
+			modules: [Navigation, Thumbs, EffectFade],
 			slidesPerView: 1,
 			spaceBetween: 0,
 

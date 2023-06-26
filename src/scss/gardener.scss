@@ -15,6 +15,10 @@
     // .gardener__price
     &__price {
     }
+
+    // .gardener__calendar
+    &__calendar {
+    }
     // .gardener__video
     &__video {
         display: flex;
@@ -293,6 +297,84 @@
         width: 100%;
     }
 }
+//========================================================================================================================================================
+.calendar-gardener {
+    // .calendar-gardener__container
+    &__container {
+    }
+    // .calendar-gardener__section-title
+    &__section-title {
+        text-align: left;
+    }
+    // .calendar-gardener__tabs
+    &__tabs {
+    }
+    // .calendar-gardener__navigation
+    &__navigation {
+        display: flex;
+        gap: rem(30);
+        margin-bottom: rem(20);
+
+        border-bottom: 1px solid $green;
+
+        @media (max-width: $tablet) {
+            overflow-x: scroll;
+        }
+    }
+    // .calendar-gardener__title
+    &__title {
+        padding: rem(20);
+        text-transform: uppercase;
+
+        &._tab-active {
+            background-color: $green;
+            color: #fff;
+        }
+    }
+    // .calendar-gardener__content
+    &__content {
+    }
+    // .calendar-gardener__body
+    &__body {
+        padding: 0 rem(20);
+        ul {
+            li {
+                display: flex;
+                align-items: center;
+                gap: rem(16);
+
+                &:not(:last-child) {
+                    margin-bottom: rem(10);
+                }
+
+                &::before {
+                    content: "";
+                    flex: 0 0 rem(32);
+                    width: rem(32);
+                    height: rem(32);
+                    background: url("@img/gardener/check.svg") 0 0 no-repeat;
+                }
+            }
+        }
+
+        ol {
+            li {
+                &:not(:last-child) {
+                    margin-bottom: rem(10);
+                }
+            }
+        }
+    }
+}
+/* . {
+    // ._section-title
+    &_section-title {
+    }
+    // ._tab-active
+    &_tab-active {
+    }
+} */
+
 //========================================================================================================================================================
 .video-gardener {
     // .video-gardener__video
